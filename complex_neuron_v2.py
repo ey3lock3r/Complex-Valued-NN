@@ -230,7 +230,7 @@ def updatefig(data):
 
             cnt += 1
             if cnt == t_len:
-                cnt = 0
+                cnt = 4
 
             return [*txt_handler, learned_angle , raw_angle, learned_point, raw_point]
         else:
@@ -282,10 +282,10 @@ def updatefig(data):
 
         cnt += 1
         if cnt == t_len:
-            cnt = 0
+            cnt = 4
         
         return [*txt_handler, learned_angle, learned_point, raw_point]
 
-ani = animation.FuncAnimation(fig, updatefig, interval=5000, blit=True, repeat=False)
+ani = animation.FuncAnimation(fig, updatefig, interval=3000, blit=True, repeat=False)
 #ani.save("single_neuron.mp4")
 plt.show()
